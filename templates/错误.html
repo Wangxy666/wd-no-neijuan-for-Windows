@@ -9,6 +9,9 @@
 <a href="/main/mainpage/">前往总会主页</a>
 <br/>
 <a href="javascript:history.back(-1)">返回上一页</a>
-
+<br/>
+{% if session["et"] != "1" and session["et"] != "2" and session["et"] != "3" and session["et"] != "4" and session["et"] != "5" and session["et"] != "6" and session["et"] != "7" and session["et"] != "8" and session["et"] != "9" %}
+<a href="javascript:void(0)" onclick="alert('这是一个“不同”于各会的“秘密”')">点击查看彩蛋提示</a>
+{% endif %}
 </body>
 </html>

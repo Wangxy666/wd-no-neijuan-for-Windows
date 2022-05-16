@@ -1,10 +1,11 @@
-from flask import Flask,render_template
+from flask import Flask,render_template,session
 import os
 import psutil
 import time
 import pickle
 
 app = Flask(__name__)
+app.secret_key='wdfanneijuan'
 
 @app.errorhandler(404)
 def page_not_found(error):
@@ -15,7 +16,7 @@ def page_not_found(error):
     f=open('.\log\et.log','w')
     f.write(str(etime))
     f.close()
-    print(etime)
+    session['et'] = str(etime)
     return render_template("错误.html",etime=etime), 404
 
 @app.route("/")
