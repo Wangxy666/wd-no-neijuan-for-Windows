@@ -31,7 +31,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 
 
 
-<body onload="lft()" >
+<body>
 <!--设置导航-->
 <ul class="nav bg-warning">
 <a class="nav-link text-dark" href="../mainpage/">主页</a>
@@ -39,7 +39,6 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 <a class="nav-link text-dark" href="../introduction/">介绍</a>
 
 <a class="nav-link text-dark" href="../member/">成员</a>
-
 <div class="dropdown">
 
 <a class="btn btn-warning dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -50,15 +49,26 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 <a href="/main/mainpage/">总会(反内卷)</a>
 <br/>
 <a href="/branch1/mainpage/">第一分会(反凡尔赛)</a>
+<br/>
+<a href="javascript:void(0)" onclick="alert('一切的页面来源于“错误”')">彩蛋页面</a>
 </div>
 
 </div>
+当前版本为:{{oldv}}
+最新版本为:{{newv}}
+{%if newv=="NONE"%}
+无法连接至Github,请稍后重启服务器
+{%elif new==1%}
+当前已是最新版本
+{%else%}
+<a href="https://raw.githubusercontent.com/Wangxy666/wd-no-neijuan-for-Windows/main/w-d%E5%8F%8D%E5%86%85%E5%8D%B7%E5%8D%8F%E4%BC%9A.rar">点此下载最新版本</a>
+{%endif%}
 </ul>
+
 
 <h1><center>W-D反内卷协会---反凡尔赛分会</center></h1>
 <h2><center><font color="bule">吾日三省吾身：可曾达凡尔赛宫乎？可曾撰《凡尔赛宫》乎？可曾造凡尔赛宫乎？<br/>既未，可不凡尔赛乎~
 <!--网页制作者的碎碎念:恕我直言,以上三者杰哥都做过--></font></center></h2>
-<h1>以下网页还没做完</h1>
 <div class="row" style="margin-top:0px">
 <!--左侧语句-->
 <div class="col-3">

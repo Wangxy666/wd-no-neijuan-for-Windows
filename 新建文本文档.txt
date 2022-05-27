@@ -1,0 +1,5 @@
+pyinstaller -i E:\code\item\wd\static\page2.ico -w w-d.py
+y
+
+
+pyinstaller -i E:\code\item\wd\static\page2.ico --version-file ./v.txt -w w-d.py

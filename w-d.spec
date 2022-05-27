@@ -33,7 +33,7 @@ exe = EXE(pyz,
           disable_windowed_traceback=False,
           target_arch=None,
           codesign_identity=None,
-          entitlements_file=None , icon='E:\\code\\item\\wd\\static\\page2.ico')
+          entitlements_file=None , version='2.txt', icon='E:\\code\\item\\wd\\static\\page2.ico')
 coll = COLLECT(exe,
                a.binaries,
                a.zipfiles,
