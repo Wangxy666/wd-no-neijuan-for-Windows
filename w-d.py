@@ -4,7 +4,6 @@ import psutil
 import time
 import requests
 import bs4
-from w3lib.html import remove_tags
 
 oldv="0.1.3"
 newv="NONE"
@@ -131,3 +130,4 @@ if __name__ == "__main__":
     get_v()
     os.system("start http://127.0.0.1:5000/")
     app.run(host="0.0.0.0")
+    #app.run(debug=True,use_reloader=False)
